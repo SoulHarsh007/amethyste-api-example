@@ -278,10 +278,10 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-draftlog@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/draftlog/-/draftlog-1.0.12.tgz#7db6a3c5b62106bb32dd4a35d67bcccb6c7d9da0"
-  integrity sha1-fbajxbYhBrsy3Uo11nvMy2x9naA=
+draftlog@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/draftlog/-/draftlog-1.0.13.tgz#2a415783955dbc6e2bb3b51a93c3d559f26b453d"
+  integrity sha512-GeMWOpXERBpfVDK6v7m0x1hPg8+g8ZsZWqJl2T17wHqrm4h8fnjiZmXcnCrmwogAc6R3YTxFXax15wezfuyCUw==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
