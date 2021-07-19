@@ -23,6 +23,14 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@discordjs/builders@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@discordjs/builders/-/builders-0.2.0.tgz#832c8d894aad13362db7a99f11a7826b21e4cd94"
+  integrity sha512-TVq7NZBCJrrTRc3CfxOr3IdgY5nrtqVxZ7qDUF1mN6LgxIiOldmFxsSwMrQBzLFVmOwqFyNLKCeblley8UpEuw==
+  dependencies:
+    discord-api-types "^0.18.1"
+    tslib "^2.3.0"
+
 "@discordjs/collection@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@discordjs/collection/-/collection-0.1.6.tgz#9e9a7637f4e4e0688fd8b2b5c63133c91607682c"
@@ -52,6 +60,23 @@
     lodash "^4.17.19"
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
+
+"@sapphire/async-queue@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@sapphire/async-queue/-/async-queue-1.1.4.tgz#ae431310917a8880961cebe8e59df6ffa40f2957"
+  integrity sha512-fFrlF/uWpGOX5djw5Mu2Hnnrunao75WGey0sP0J3jnhmrJ5TAPzHYOmytD5iN/+pMxS+f+u/gezqHa9tPhRHEA==
+
+"@types/node@*":
+  version "16.3.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.3.tgz#0c30adff37bbbc7a50eb9b58fae2a504d0d88038"
+  integrity sha512-8h7k1YgQKxKXWckzFCMfsIwn0Y61UK6tlD6y2lOb3hTOIMlK3t9/QwHOhc81TwU+RMf0As5fj7NPjroERCnejQ==
+
+"@types/ws@^7.4.5":
+  version "7.4.7"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-7.4.7.tgz#f7c390a36f7a0679aa69de2d501319f4f8d9b702"
+  integrity sha512-JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtAVK0g19muApzAy4bm9byz79xa2ZnO/BOBC2R8RC5Lww==
+  dependencies:
+    "@types/node" "*"
 
 abort-controller@^3.0.0:
   version "3.0.0"
@@ -258,18 +283,30 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
+discord-api-types@^0.18.1:
+  version "0.18.1"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.18.1.tgz#5d08ed1263236be9c21a22065d0e6b51f790f492"
+  integrity sha512-hNC38R9ZF4uaujaZQtQfm5CdQO58uhdkoHQAVvMfIL0LgOSZeW575W8H6upngQOuoxWd8tiRII3LLJm9zuQKYg==
+
+discord-api-types@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.19.0.tgz#86ba8021b29190cf860e90a2bc3e29b1d7aab3ba"
+  integrity sha512-t2HKLd43Lbe+rf+ffYfKVv9Kk5f6p7sFqvO6CMV55ZB0PgZv8WigCkt9FoJciYo5S3Q6CGYK+WnE/ZG+6vkBDQ==
+
 "discord.js@github:discordjs/discord.js":
-  version "12.5.0"
-  resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/9f3c3e091844d22793cfd2880ffc2936ce41feab"
+  version "13.0.0-dev"
+  uid "54d6a3a0708105acd6a3a709a8e1636d00c81fc8"
+  resolved "https://codeload.github.com/discordjs/discord.js/tar.gz/54d6a3a0708105acd6a3a709a8e1636d00c81fc8"
   dependencies:
+    "@discordjs/builders" "^0.2.0"
     "@discordjs/collection" "^0.1.6"
     "@discordjs/form-data" "^3.0.1"
+    "@sapphire/async-queue" "^1.1.4"
+    "@types/ws" "^7.4.5"
     abort-controller "^3.0.0"
+    discord-api-types "^0.19.0"
     node-fetch "^2.6.1"
-    prism-media "^1.2.2"
-    setimmediate "^1.0.5"
-    tweetnacl "^1.0.3"
-    ws "^7.3.1"
+    ws "^7.5.1"
 
 doctrine@^3.0.0:
   version "3.0.0"
@@ -757,11 +794,6 @@ prettier@^2.2.1:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
   integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
 
-prism-media@^1.2.2:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/prism-media/-/prism-media-1.2.3.tgz#37bbb11726674a73fe56a2df4de76aa91d2141b7"
-  integrity sha512-fSrR66n0l6roW9Rx4rSLMyTPTjRTiXy5RVqDOurACQ6si1rKHHKDU5gwBJoCsIV0R3o9gi+K50akl/qyw1C74A==
-
 progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
@@ -795,11 +827,6 @@ semver@^7.2.1:
   integrity sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==
   dependencies:
     lru-cache "^6.0.0"
-
-setimmediate@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
-  integrity sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
 
 shebang-command@^2.0.0:
   version "2.0.0"
@@ -884,10 +911,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-tweetnacl@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.3.tgz#ac0af71680458d8a6378d0d0d050ab1407d35596"
-  integrity sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
+tslib@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
@@ -944,10 +971,10 @@ write@1.0.3:
   dependencies:
     mkdirp "^0.5.1"
 
-ws@^7.3.1:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.0.tgz#a5dd76a24197940d4a8bb9e0e152bb4503764da7"
-  integrity sha512-kyFwXuV/5ymf+IXhS6f0+eAFvydbaBW3zjpT6hUdAh/hbVjTIB5EHBGi0bPoCLSK2wcuz3BrEkB9LrYv1Nm4NQ==
+ws@^7.5.1:
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.3.tgz#160835b63c7d97bfab418fc1b8a9fced2ac01a74"
+  integrity sha512-kQ/dHIzuLrS6Je9+uv81ueZomEwH0qVYstcAQ4/Z93K8zeko9gtAbttJWzoC5ukqXY1PpoouV3+VSOqEAFt5wg==
 
 yallist@^4.0.0:
   version "4.0.0"
